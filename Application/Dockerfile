@@ -11,9 +11,7 @@ RUN 	echo 'var http = require('http');' > /Application/server.js && \
 	echo 'response.write('DynatraceOne is the best team!');' >> /Application/server.js && \
 	echo 'response.end();' >> /Application/server.js && \
 	echo '}' >> /Application/server.js && \
-	echo 'http.createServer(onRequest).listen(8000);' >> /Application/server.js && \
-
-	chmod 755 /Application/server.js
+	echo 'http.createServer(onRequest).listen(8000);' >> /Application/server.js
 
 CMD /Application/server.sh
 
